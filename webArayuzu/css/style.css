@@ -79,6 +79,11 @@ img {
     letter-spacing: 1px;
     border-radius: 4px;
     text-transform: uppercase;
+    transition: 200ms all;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 /*
@@ -92,6 +97,9 @@ img {
 
 .header{
     background-color: #141618;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header .container{
@@ -133,6 +141,10 @@ img {
 .header .container .search input::placeholder{
     color: rgba(255, 255, 255, .6);
     transition: 200ms opacity;
+}
+
+.header .search input:focus::placeholder{
+    opacity: 0;
 }
 
 
@@ -202,6 +214,11 @@ img {
 
 .banner .container .banner-box img{
     max-width: 100%;
+    transition: 200ms transform;
+}
+
+.banner .container .banner-box img:hover{
+    transform: scale(1.1);
 }
 
 .banner .container .banner-box.banner-image{
@@ -212,6 +229,7 @@ img {
     font-size: 48px;
     color: #fff;
     line-height: 56px;
+    font-weight: 500;
 }
 
 .banner .container .banner-box h2{
@@ -232,7 +250,7 @@ img {
 .section1{
     display: flex;
     align-items: center;
-    padding: 120px 0;
+    padding: 120px 0 100px 0;
 }
 
 .section1 .lang{
@@ -294,7 +312,190 @@ img {
 .section2{
     background-color: #fff;
     box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
-    padding: 100px;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 100px;
 }
 
 
+.section2 .icon{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #f4f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d7dbe7;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+.section2 p{
+    font: 22px/36px georgia, times, serif;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.section2 .user{
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,.7);
+}
+
+.section2 .user img{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+}
+
+/*
+    Section 3
+*/
+
+.btn.color-green{
+    background-color: #36855b;   
+}
+
+
+.section3{
+    display: flex;
+    padding:0 30px;
+}
+
+.section3  div{
+    width: 50%;
+    min-width: 50%;
+}
+
+.section3 .text h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section3 .text p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #111;
+}
+
+.section3 .text .btn{
+    margin-top: 50px;
+}
+
+.section3 .image img{
+    width: 100%;
+    display: block;
+}
+
+.section3 .image{
+    padding-top: 100px;
+}
+
+/*
+    Footer
+*/
+
+.footer{
+    background-color: #141618;
+
+}
+
+.footer .container{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo{
+    margin-bottom: 40px;
+}
+
+.footer .container .footer-nav{
+    display: flex;
+    align-items: center;
+}
+
+.footer .container .footer-nav nav{
+    margin-right: 32px;
+    align-self: flex-start;
+}
+
+.footer .container .footer-nav nav h6{
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer .footer-nav nav ul li{
+    margin-bottom: 4px;
+}
+
+.footer .footer-nav nav ul li a{
+    display: block;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255,255, 255, .5);
+    transition: 200ms color;
+}
+
+.footer .footer-nav nav ul li a:hover{
+    color: #fff;
+}
+
+.footer .container .footer-nav .search{
+    margin-left: auto;
+}
+
+.footer .container .footer-nav .search h6{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.footer .container .footer-nav .search form{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.footer .container .footer-nav .search input{
+    height: 48px;
+    width: 375px;
+    background-color: #21252d;
+    padding: 0 15px;
+    color: white;
+}
+
+.footer .container .footer-nav .search button{
+    height: 48px;
+    width: 48px;
+    background-color: #316aff;
+    color: white;
+    padding: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer .container .copyright{
+    padding-top: 25px;
+    margin-top: 25px;
+    font-size: 14px;
+    color: rgba(255,255, 255,.5);
+    border-top: 1px solid rgba(255, 255, 255, .05);
+}
+
+.footer .container .copyright a{
+    color: rgba(255,255, 255,.5);
+    margin-right: 10px;
+    transition: 200ms color;
+}
+.footer .container .copyright a:hover{
+    color: rgba(255,255, 255,1);
+    margin-right: 10px;
+}

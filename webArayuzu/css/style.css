@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1300px;
+    margin :0 auto;
+}
+
+.header{
+    background-color: #141618;
+}
+
+.header .container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .container .logo{
+    margin-right: 40px;
+}
+
+.header .container .menu ul li a{
+    color: rgba(255, 255, 255, .6);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .container .menu ul li a i{
+    margin-right: 10px;
+}
+
+.header .container .search{
+    display: flex;
+    margin-left: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.header .container .search input{
+    background-color: #21252d;
+    height: 34px;
+    width: 250px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.header .container .search input::placeholder{
+    color: rgba(255, 255, 255, .6);
+    transition: 200ms opacity;
+}
+
+
+.header .container .search button{
+    width: 32px;
+    height: 34px;
+    background-color: #21252d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header .container .search button:hover{
+    background-color: #316aff;
+}
+
+.header .container .menu ul li a:hover{
+    color: #fff
+}
+
+
+.header .container .login-buttons ul{
+    display: flex;
+}
+
+.header .container .login-buttons ul li{
+    margin-left: 15px;
+}
+
+.header .container .login-buttons ul li a{
+    color: rgba(255, 255, 255, .8);
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.header .container .login-buttons ul li a:hover{
+    color: #fff;
+}
+
+.header .container .login-buttons ul li.join-now-btn a{
+    background-color: #36855b;
+    border-radius: 4px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+/*
+    Banner Section
+*/
+.banner{
+    min-height: 50vh;
+    height: 50vh;
+    background: linear-gradient(170deg, #212A39, #181E28);
+}

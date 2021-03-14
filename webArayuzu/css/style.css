@@ -16,6 +16,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    box-sizing: border-box;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -25,7 +26,8 @@ body {
 	line-height: 1;
     font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-
+    -webkit-font-smoothing : antialiased;
+    background-color: #F4F7F9;
 }
 ol, ul {
 	list-style: none;
@@ -56,9 +58,32 @@ img {
     clear: both;
 }
 
+
+
+
 *{
     box-sizing: border-box;
 }
+
+/*
+    Ortak Alanlar
+*/
+
+.btn{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #316aff;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/*
+    Header
+*/
 
 .container{
     width: 1300px;
@@ -159,8 +184,117 @@ img {
 /*
     Banner Section
 */
+
 .banner{
-    min-height: 50vh;
-    height: 50vh;
     background: linear-gradient(170deg, #212A39, #181E28);
 }
+
+.banner .container{
+    min-height: 50vh;
+    display: flex;
+    padding: 70px 0;
+    align-items: center;
+}
+
+.banner .container .banner-box{
+    width: 50%;
+}
+
+.banner .container .banner-box img{
+    max-width: 100%;
+}
+
+.banner .container .banner-box.banner-image{
+    padding-left: 150px;
+}
+
+.banner .container .banner-box h1{
+    font-size: 48px;
+    color: #fff;
+    line-height: 56px;
+}
+
+.banner .container .banner-box h2{
+    color: #B0B6BE;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.banner .container .banner-box .btn{
+    margin-top: 65px;
+}
+
+
+/*
+    Section 1
+*/
+
+.section1{
+    display: flex;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.section1 .lang{
+    display: flex;
+    width: 392px;
+    min-width: 392px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section1 .lang a{
+    width: 184px;
+    height: 184px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    transition: 200ms all;
+}
+
+.section1 .lang a:hover{
+    transform: scale(1.05);
+}
+
+.section1 .lang a img{
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.section1 .lang a .title{
+    font-size: 18px;
+    color: #111;
+}
+
+.section1 .inner{
+    padding-left: 160px;
+}
+
+.section1 .inner h3{
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.section1 .inner p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+/*
+    Section2
+*/
+
+.section2{
+    background-color: #fff;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+}
+
+

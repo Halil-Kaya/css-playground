@@ -71,7 +71,7 @@ body{
 
 .card{
     width: 85%;
-    height: 90%;
+    height: 80%;
     background-color: white;
     border-radius: 80px;
     overflow: hidden;
@@ -112,8 +112,10 @@ body{
 }
 
 .card .form-side .inner .icons{
-    width: 50%;
+    width: 40%;
     margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .card .form-side .inner .icons .icon-list{
@@ -183,7 +185,7 @@ body{
 
 .input input{
     font-size: 18px;
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(66, 66, 66, 0.5);;
     transition: 300ms all;
 }
@@ -196,13 +198,24 @@ body{
 .input input:focus{
     font-size: 18px;
     padding: 8px 0;
-    border-bottom: 1px solid #1DA1F2;;
+    border-bottom: 1px solid #1DA1F2;
 }
-.input input:focus::placeholder{
-    opacity: 1;
-    
+.input input::placeholder{
+    color: rgba(71, 52, 52, 0.6);
+    transition: 300ms opacity;
 }
 
+.input label{
+    margin-bottom: 18px;
+}
+
+.input{
+    margin-bottom: 28px;
+}
+
+.input input:focus::placeholder{
+    opacity: 0;
+}
 
 
 .card .form-side .form-input .form .input label{
@@ -211,8 +224,76 @@ body{
 }
 
 
+.password-input-place{
+    display: flex;
+}
+.password-input-place input{
+    flex: 1;    
+}
 
-@media only screen and (max-width:850px){
+.password-input-place i{
+    color: rgba(0, 0,0,.5);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1DA1F2;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+.password-input-place i:hover{
+    color: #1DA1F2;
+}
+
+
+.form .other-stufs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.form .other-stufs .keepme-in-place label{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.form .other-stufs a{
+    color: rgb(209, 65, 142);
+    font-weight: 600;
+}
+
+
+.form-input .form .submit-btn{
+    padding: 15px 10px;
+    border-radius: 32px;
+    background-color: #1DA1F2;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+.form-input{
+    border-bottom: 1px solid rgba(0, 0,0,.1);
+    margin-bottom: 45px;
+
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup a{
+    padding: 10px 25px;
+    color: rgb(209, 65, 142);
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width:1200px){
     
     .card .image-side{
         display: none;
@@ -222,6 +303,11 @@ body{
         height: 100%;
         width: 95%;
         border-radius: 0;
+    }
+
+    .card .form-side .inner{
+        width: 85%;
+        margin: auto;
     }
 
 }

@@ -51,8 +51,8 @@
                         <div class="input password-input">
                             <label for="password">Password</label>
                             <div class="password-input-place">
-                                <input type="password" placeholder="Enter Password">
-                                <i class="fa fa-eye"></i>
+                                <input type="password" id="passwordinput" placeholder="Enter Password">
+                                <i onclick="showPassword()" id="eyeIcon" class="fa fa-eye"></i>
                             </div>
                         </div>
                         
@@ -67,14 +67,14 @@
 
                         </div>
 
-                        <input type="submit" name="" value="Sign in"  id="">
+                        <input class="submit-btn" type="submit" name="" value="Sign in"  id="">
 
                     </div>
                 </div>
 
                 <div class="signup">
                     <span>Don't have an account</span>
-                    <span>Sign up</span>
+                    <a href="#">Sign up</a>
                 </div>
 
             </div>
@@ -83,9 +83,27 @@
     </div>
 
     <script>
-        console.log(window.screen.height);
 
 
+        let input = document.getElementById("passwordinput")
+        let eyeIcon = document.getElementById("eyeIcon")
+
+        eyeIcon
+
+        let station = true
+        function showPassword(){
+        
+            if(station){
+                input.type = "text"
+                eyeIcon.style.color = "#1DA1F2"
+            }else{
+                input.type = "password"
+                eyeIcon.style.color = "rgba(0, 0,0,.5)"
+
+            }
+
+            station = !station
+        }
 
     </script>
 

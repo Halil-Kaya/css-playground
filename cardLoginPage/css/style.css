@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url('../image/bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    border-radius: 80px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card .image-side{
+    width: 100%;
+}
+
+.card .image-side img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card .form-side{
+    height: 100%;
+    width: 100%;
+}
+
+.card .form-side .inner{
+    width: 65%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .form-side .inner .sign-in-text{
+    font-size: 42px;
+    font-weight: 800;
+    color: rgb(0, 119, 255);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card .form-side .inner .icons{
+    width: 50%;
+    margin: auto;
+}
+
+.card .form-side .inner .icons .icon-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.card .form-side .inner .icons .icon-list li{
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 1px rgba(0, 0,0,.2);
+}
+
+.google-icon{
+    color: rgb(113, 113, 255);
+}
+
+.facebook-icon{
+    color: #4267B2;
+}
+
+.twitter-icon{
+    color: #1DA1F2;
+}
+
+.card .form-side .sign-in-info{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.card .form-side .sign-in-info .border{
+    border-top: 1px solid rgba(0, 0,0,.1);
+    width: 80%;
+}
+
+.card .form-side .sign-in-info div{
+    width: 100%;
+    color: rgba(66, 66, 66, 0.5);
+    text-align: center;
+}
+
+.card .form-side .form-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+
+.card .form-side .form-input .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .form-side .form-input .form .input{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input input{
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.5);;
+    transition: 300ms all;
+}
+
+.input input:hover{
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #1DA1F2;;
+}
+.input input:focus{
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #1DA1F2;;
+}
+.input input:focus::placeholder{
+    opacity: 1;
+    
+}
+
+
+
+.card .form-side .form-input .form .input label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (max-width:850px){
+    
+    .card .image-side{
+        display: none;
+    }
+
+    .card{
+        height: 100%;
+        width: 95%;
+        border-radius: 0;
+    }
+
+}
+

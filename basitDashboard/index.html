@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
     <div class="sidebar">
@@ -16,9 +19,9 @@
             </a>
         </div>
 
-        <ul class="menu">
+        <nav class="menu">
             <ul>
-                <li>
+                <li class="active">
                     <a href="#">Home</a>
                 </li>
                 <li>
@@ -34,12 +37,176 @@
                     <a href="#">Teams</a>
                 </li>
             </ul>
-        </ul>
+        </nav>
+
+        <div class="storage">
+
+            <div class="title">
+                <div>
+                    <i class="fa fa-cloud"></i>
+                    Storage
+                </div>
+                <div class="percent">60%</div>
+            </div>
+
+            <div class="bar">
+                <span style="width: 60%;"></span>
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="content"></div>
+    <div class="content">
+
+        <div class="inner">
+
+            <div class="search">
+                <input id="search" type="text" placeholder="Search">
+                <label for="search">
+                    <i class="fa fa-search"></i>
+                </label>
+            </div>
+
+            <div class="inner-box">
+
+                <div class="content-title">
+                    <h4>Projects</h4>
+                    <a href="#">View all
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="projects">
+                    <a href="#" class="box active">
+                        <span class="box-top">
+                            <i class="fa fa-folder"></i>
+                            <span class="box-shared">
+                                <img src="https://pbs.twimg.com/profile_images/1268973636163174401/_I31s5KU_400x400.jpg"
+                                    alt="">
+                                <img src="https://pbs.twimg.com/profile_images/1268973636163174401/_I31s5KU_400x400.jpg"
+                                    alt="">
+                                <img src="https://pbs.twimg.com/profile_images/1268973636163174401/_I31s5KU_400x400.jpg"
+                                    alt="">
+                            </span>
+                        </span>
+                        <span class="box-title">
+                            <span class="name">Nucleus Tech</span>
+                            <span class="task">16 tasks</span>
+                        </span>
+                        <span class="box-bar">
+                            <span style="width: 70%;" title="70%"></span>
+                        </span>
+                    </a>
+                    <a href="#" class="box active">
+                        <span class="box-top">
+                            <i class="fa fa-folder"></i>
+                            <span class="box-shared">
+                                <img src="https://pbs.twimg.com/profile_images/1268973636163174401/_I31s5KU_400x400.jpg"
+                                    alt="">
+                                <img src="https://pbs.twimg.com/profile_images/1268973636163174401/_I31s5KU_400x400.jpg"
+                                    alt="">
+                            </span>
+                        </span>
+                        <span class="box-title">
+                            <span class="name">Summit AI</span>
+                            <span class="task">5 tasks</span>
+                        </span>
+                        <span class="box-bar">
+                            <span style="width: 90%;" title="90%"></span>
+                        </span>
+                    </a>
+                    <a href="#" class="box empty">
+                        <i class="fa fa-plus"></i>
+                        <span class="text">Add New Project</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="inner-box">
+
+                <div class="content-title">
+                    <h4>Recent</h4>
+                    <a href="#">View all
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="recents">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                Design Assets
+                            </a>
+                            <div class="visibility">
+                                Only You
+                            </div>
+                            <div class="size">
+                                2.4 GB
+                            </div>
+                            <div class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                Design Assets
+                            </a>
+                            <div class="visibility">
+                                Only You
+                            </div>
+                            <div class="size">
+                                2.4 GB
+                            </div>
+                            <div class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                Design Assets
+                            </a>
+                            <div class="visibility">
+                                Only You
+                            </div>
+                            <div class="size">
+                                2.4 GB
+                            </div>
+                            <div class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                Design Assets
+                            </a>
+                            <div class="visibility">
+                                Only You
+                            </div>
+                            <div class="size">
+                                2.4 GB
+                            </div>
+                            <div class="more">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="rightbar"></div>
+
+    </div>
 
 
 </body>
+
 </html>

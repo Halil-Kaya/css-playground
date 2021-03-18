@@ -433,3 +433,176 @@ body{
 .content .inner .inner-box .recents ul li:hover .more{
     opacity: 1;
 }
+
+.rightbar{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px !important;
+}
+
+.rightbar .inner{
+    flex: 1;
+    padding: 32px 40px;
+    overflow: auto;
+}
+
+
+.rightbar .top-side{
+    display: flex;
+    font-size: 24px;
+    color: rgba(0, 0, 0, .4);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.rightbar .top-side i.fa-bell{
+    margin-left: auto;
+    position: relative;
+    margin-right: 25px;
+    font-size: 24px;
+    
+}
+
+.rightbar .top-side i.fa-bell span{
+    position: absolute;
+    top: -5;
+    right: -5;
+    width: 8px;
+    height: 8px;
+    background-color: salmon;
+    border-radius: 50%;
+}
+
+.rightbar .top-side i.fa-chart-pie{
+    color: seagreen;
+    margin-right: 18px;
+    font-size: 32px;
+
+    display: block;
+}
+.rightbar .top-side span{
+    color: rgba(0, 0, 0, .8);
+    font-weight: 500;
+    font-size: 24;
+    margin-right: 18px;
+}
+
+.rightbar .top-side i.fa-chevron-down{
+    color: rgba(0, 0, 0, .4);
+    font-size: 14px;
+    margin-right: 18px;
+}
+
+.rightbar .inner .notification{
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 15px;
+}
+
+
+.rightbar .inner .notification ul li{
+    margin-bottom: 48px;
+}
+
+.rightbar .inner .notification ul li:nth-child(2) .notification-info .bell{
+    border: 6px solid rgb(255, 240, 192);
+    background-color: rgb(241, 185, 0);
+}
+
+.rightbar .inner .notification ul li:nth-child(3) .notification-info .bell{
+    border: 6px solid rgb(228, 255, 229);
+    background-color: rgb(33, 245, 44);
+}
+
+.rightbar .inner .notification ul li:nth-child(4) .notification-info .bell{
+    border: 6px solid rgb(255, 240, 192);
+    background-color: rgb(241, 185, 0);
+}
+
+.rightbar .inner .notification ul li .notification-info{
+    display: flex;
+    position: relative;
+}
+
+.rightbar .inner .notification ul li .notification-info .bell{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    border: 6px solid rgb(223, 197, 248);
+    box-sizing: border-box;
+    box-shadow: 0 0 0 8px white;
+    left: -25px;
+    top: -3px;
+    border-radius: 32px;
+    background-color: rgba(138,43,226,1);
+}
+
+.rightbar .inner .notification ul li .notification-info .text{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    padding-right: 8px;
+}
+
+
+.rightbar .inner .notification ul li .notification-info .text .bolder-text{
+    font-weight: 500;
+}
+
+
+.rightbar .inner .notification ul li .notification-info .time{
+    font-size: 12px;
+    color: rgba(0,0, 0,0.5);
+    margin-left: auto;
+}
+
+.rightbar .notification ul li .active-images {
+    display: flex;
+    padding: 10px 5px;
+}
+
+.rightbar .notification ul li .active-images img{
+    width: 64px;
+    height: 52px;
+    padding-right: 14px;
+}
+
+.rightbar .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightbar .inner .coin-info{
+    margin-top: auto;
+    height: 250px;
+    border: 1px solid rgba(0,0,0, 0.1); 
+    border-radius: 12px;
+    padding-top: 25px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.rightbar .inner .coin-info i.fa-times{
+    position: absolute;
+    color: rgba(0, 0, 0, .2);
+    top: 18px;
+    right: 18px;
+}
+
+
+.rightbar .inner .coin-info .coin-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .8);
+}
+
+.rightbar .inner .coin-info .coin-subtitle{
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .8);
+}

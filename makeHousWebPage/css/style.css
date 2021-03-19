@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('../img/bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 120px;
+    align-items: center;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .navbar-menu ul{
+    display: flex;
+}
+.header .navbar-menu ul li{
+    margin-left: 25px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.header .navbar-menu ul li a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header .navbar-menu ul li::before{
+    content: '';
+    background-color: aqua;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    transition: all 200ms;
+}
+.header .navbar-menu ul li:hover::before{
+    width: 100%;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2{
+    color: #fff;
+    font-size: 84px;
+    font-weight: 600;
+}
+.content .inner{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+.content .inner p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.content .inner .btns{
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+
+.content .inner .btns a{
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 220px;
+    border-radius: 50px;
+    border: 2px solid rgb(16, 87, 87);
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.content .inner .btns a::before{
+    content: '';
+    background-color: rgb(16, 87, 87);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    transition: all 500ms;
+
+}
+
+.content .inner .btns a:hover::before{
+    width: 100%;
+}

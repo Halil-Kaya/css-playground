@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, rgb(87, 87, 255), rgb(207, 71, 207));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 450px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .login-title{
+    text-align: center;
+    font-size: 38px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(0, 0,0, .2);
+}
+
+.card .form{
+    height: 100%;
+    padding: 0px 60px 30px 60px;
+}
+
+.card .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .form form .user-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card .form form .user-input input{
+    width: 100%;
+    margin: auto;
+    height: 35px;
+    border-bottom: 2px solid rgba(0, 0,0, .3);
+    padding: 0 8px;
+}
+
+.card .form form .user-input label{
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgba(0, 0,0, .6);
+    bottom: 8px;
+    left: 8px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.card .form form .user-input input:focus{
+    border-bottom: 2px solid rgb(29 161 242);
+}
+
+.card .form form .user-input input:focus ~ label{
+    bottom: 30px;
+    color: rgb(29 161 242);
+}
+
+.card .form form .forgot-password{
+    color:  rgba(0, 0,0, .6);
+    margin-top: 20px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.card .form form .submit-btn{
+    background-color: rgb(29 161 242);
+    padding: 8px 0px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 18px;
+    border-radius: 50px;
+}
+
+.card .form form .inner{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 25px;
+}
+
+.card .form form .inner span{
+    color: rgba(0, 0,0, .6);
+    margin-right: 8px;
+}
+
+.card .form form .inner a{
+    color: rgb(29 161 242);
+    font-weight: bold;
+}

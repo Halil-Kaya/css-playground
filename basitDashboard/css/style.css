@@ -584,6 +584,8 @@ body{
     text-align: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
+
 }
 
 .rightbar .inner .coin-info i.fa-times{
